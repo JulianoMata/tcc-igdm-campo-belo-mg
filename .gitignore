@@ -1,0 +1,47 @@
+# ========================
+# Ambientes Virtuais e Variáveis
+# ========================
+venv/
+env/
+.env
+.venv/
+
+# ========================
+# Dados e Bases
+# ========================
+# Evita subir os ficheiros originais pesados (recomenda-se colocar a fonte no README)
+dados_brutos/
+*.csv
+*.xlsx
+*.db
+*.sqlite3
+
+# Se quiser subir os DADOS TRATADOS (leves) para que os avaliadores rodem o código:
+# Descomente a linha abaixo (apague a exclamação) apenas se garantir que são pequenos
+# !dados_tratados/*.csv 
+
+# ========================
+# Ficheiros do Power BI
+# ========================
+# O pbix é um binário pesado que incha o repositório e o Git não versiona bem.
+*.pbix
+
+# ========================
+# Ficheiros Temporários do Python e Jupyter
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# ========================
+# IDEs (Configurações Locais)
+# ========================
+.vscode/
+.idea/
+
+# ========================
+# Ficheiros de Sistema (Mac/Windows)
+# ========================
+.DS_Store
+Thumbs.db

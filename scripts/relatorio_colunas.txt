@@ -1,0 +1,58 @@
+RELATÓRIO DE AUDITORIA DE DADOS - TCC CAMPO BELO
+============================================================
+
+📂 PASTA: CALCULOS
+------------------------------------------------------------
+Arquivo analisado: calculos_2025.csv
+
+>>> COLUNAS JÁ MAPEADAS (UTILIZADAS):
+✅ codigo_ibge -> IBGE
+✅ anomes_s -> COMPETENCIA
+✅ vl_cal_com_incent_f -> VALOR_CALCULADO
+✅ vl_rep_mes_f -> VALOR_REPASSADO
+
+>>> COLUNAS DISPONÍVEIS (NÃO UTILIZADAS):
+⬜ vl_cal_sem_icent_f
+⬜ prop_fam_em_desc_cond_acom_f
+⬜ gst_mun_sigpbf_at_menos_1_f
+⬜ vl_tot_incent_f
+⬜ teto_rep_igdm_f
+⬜ mt_imp_rep_s
+
+============================================================
+
+📂 PASTA: TAXAS
+------------------------------------------------------------
+Arquivo analisado: taxas_2025.csv
+
+>>> COLUNAS JÁ MAPEADAS (UTILIZADAS):
+✅ codigo_ibge -> IBGE
+✅ anomes_s -> COMPETENCIA
+✅ tx_acomp_freq_escol_f -> TAXA_FREQ_ESCOLAR
+✅ tx_acomp_agenda_saude_f -> TAXA_ACOMP_SAUDE
+✅ tx_atual_cad_f -> TAXA_ATUALIZACAO
+✅ igdm_f -> TAXA_IGDM
+✅ igd_pbf_fator_redutor_conforme_saldo_f -> FATOR_REDUTOR_FINANCEIRO
+
+>>> COLUNAS DISPONÍVEIS (NÃO UTILIZADAS):
+
+============================================================
+
+📂 PASTA: PUBLICO
+------------------------------------------------------------
+Arquivo analisado: publico_2025.csv
+
+>>> COLUNAS JÁ MAPEADAS (UTILIZADAS):
+✅ codigo_ibge -> IBGE
+✅ anomes_s -> COMPETENCIA
+✅ igd_pbf_qtd_pessoas_com_freq_escolar_informada_i -> EDUCACAO_ACOMPANHADOS
+✅ igd_pbf_qtd_total_criancas_adolescentes_pbf_i -> QTD_CRIANCAS
+✅ igd_pbf_qtd_pessoas_cond_saude_informada_i -> SAUDE_ACOMPANHADOS
+✅ igd_pbf_qtd_total_publico_saude_i -> SAUDE_PUBLICO_TOTAL
+✅ igd_pbf_qtd_familias_cad_ate_meio_sm_i -> QTD_FAMILIAS
+
+>>> COLUNAS DISPONÍVEIS (NÃO UTILIZADAS):
+⬜ igd_pbf_qtd_atualizacoes_cad_ate_meio_sm_i
+
+============================================================
+
