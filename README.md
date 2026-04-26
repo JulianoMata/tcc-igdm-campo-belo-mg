@@ -17,7 +17,7 @@ O Cadastro Único (CadÚnico) é a porta de entrada para os programas sociais no
 
 A visualização completa dos indicadores financeiros e das taxas de qualidade (IGD-M) está disponível em um painel interativo.
 
-🔗 **[Acessar o Dashboard no Power BI Online](https://app.powerbi.com/view?r=eyJrIjoiZGE0MTFkYTgtNWZjYi00MWQ5LTkyMzctNTdkNGE0YjAzNWIzIiwidCI6IjkxMGFjMTUzLTc0NWMtNGZkNy1iNDNkLTQyNGE3Yjc5OTQyYiJ9)**
+🔗 **[Acessar o Dashboard no Power BI Online](https://app.powerbi.com/view?r=eyJrIjoiZGE0MTFkYTgtNWZjYi00MWQ5LTkyMzctNTdkNGE0YjAzNWIzIiwidCI6IjkxMGFjMTUzLTc0NWMtNGZkNy1iNDNkLTQyNGE3Yjc5OTQyYiJ9&pageName=f8873520a2400a91b393)**
 
 ---
 
