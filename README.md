@@ -135,5 +135,6 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull r
 ### 📞 Contato
 Para dúvidas ou sugestões, entre em contato:
 
-**Juliano França da Mata** 📧 jfmatta@gmail.com  
+**Juliano França da Mata** 
+📧 jfmatta@gmail.com  
 💼 [LinkedIn](https://www.linkedin.com/in/julianomata/)
