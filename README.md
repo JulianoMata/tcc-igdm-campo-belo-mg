@@ -138,4 +138,4 @@ Para dúvidas ou sugestões, entre em contato:
 **Juliano França da Mata** 
 
 📧 jfmatta@gmail.com  
-💼 [LinkedIn](https://www.linkedin.com/in/julianomata/)
+💼 [LinkedIn](https://www.linkedin.com/in/julianomata)
