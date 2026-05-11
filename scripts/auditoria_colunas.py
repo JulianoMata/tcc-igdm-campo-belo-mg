@@ -34,7 +34,6 @@ MAPA_COLUNAS_ATUAL = {
 def auditar_tudo():
     print("🕵️‍♂️ INICIANDO AUDITORIA COMPLETA DE COLUNAS...")
     
-    # Tenta achar a pasta dados_brutos subindo um nível
     caminho_base = os.path.join(os.path.dirname(__file__), "..", "dados_brutos")
     caminho_base = os.path.abspath(caminho_base)
     
@@ -42,10 +41,7 @@ def auditar_tudo():
         print(f"❌ Erro: Pasta de dados não encontrada em: {caminho_base}")
         return
 
-    # Ordem de prioridade para análise
     pastas = ['CALCULOS', 'TAXAS', 'PUBLICO']
-    
-    # Prepara o arquivo de relatório na mesma pasta do script
     arquivo_saida = os.path.join(os.path.dirname(__file__), "relatorio_colunas.txt")
     
     with open(arquivo_saida, "w", encoding="utf-8") as f:
@@ -54,13 +50,12 @@ def auditar_tudo():
         
         for pasta in pastas:
             path_pasta = os.path.join(caminho_base, pasta)
-            # Busca case-insensitive para .csv ou .CSV
             arquivos = sorted(glob.glob(os.path.join(path_pasta, "*.[cC][sS][vV]")))
             
             f.write(f"📂 PASTA: {pasta}\n")
             f.write("-" * 60 + "\n")
             
-            print(f" > Lendo pasta: {pasta}...") # Feedback no terminal
+            print(f" > Lendo pasta: {pasta}...")
             
             if arquivos:
                 arq_recente = arquivos[-1]
@@ -79,11 +74,17 @@ def auditar_tudo():
                         else:
                             disponiveis.append(f"⬜ {col}")
                     
+                    # 🔎 MÉTRICA QUANTITATIVA ADICIONADA
+                    f.write(f"Total de colunas encontradas: {len(df.columns)}\n")
+                    f.write(f"Mapeadas: {len(ja_temos)} | Não mapeadas: {len(disponiveis)}\n\n")
+                    
                     f.write(">>> COLUNAS JÁ MAPEADAS (UTILIZADAS):\n")
-                    for item in ja_temos: f.write(f"{item}\n")
+                    for item in ja_temos:
+                        f.write(f"{item}\n")
                     
                     f.write("\n>>> COLUNAS DISPONÍVEIS (NÃO UTILIZADAS):\n")
-                    for item in disponiveis: f.write(f"{item}\n")
+                    for item in disponiveis:
+                        f.write(f"{item}\n")
                     
                 except Exception as e:
                     f.write(f"❌ Erro ao ler arquivo: {e}\n")
