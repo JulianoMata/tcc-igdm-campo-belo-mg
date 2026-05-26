@@ -3,7 +3,10 @@ RELATÓRIO DE AUDITORIA DE DADOS - TCC CAMPO BELO
 
 📂 PASTA: CALCULOS
 ------------------------------------------------------------
-Arquivo analisado: calculos_2025.csv
+Arquivo analisado: calculos_2026.csv
+
+Total de colunas encontradas: 10
+Mapeadas: 4 | Não mapeadas: 6
 
 >>> COLUNAS JÁ MAPEADAS (UTILIZADAS):
 ✅ codigo_ibge -> IBGE
@@ -23,7 +26,10 @@ Arquivo analisado: calculos_2025.csv
 
 📂 PASTA: TAXAS
 ------------------------------------------------------------
-Arquivo analisado: taxas_2025.csv
+Arquivo analisado: taxas_2026.csv
+
+Total de colunas encontradas: 7
+Mapeadas: 7 | Não mapeadas: 0
 
 >>> COLUNAS JÁ MAPEADAS (UTILIZADAS):
 ✅ codigo_ibge -> IBGE
@@ -40,7 +46,10 @@ Arquivo analisado: taxas_2025.csv
 
 📂 PASTA: PUBLICO
 ------------------------------------------------------------
-Arquivo analisado: publico_2025.csv
+Arquivo analisado: publico_2026.csv
+
+Total de colunas encontradas: 8
+Mapeadas: 7 | Não mapeadas: 1
 
 >>> COLUNAS JÁ MAPEADAS (UTILIZADAS):
 ✅ codigo_ibge -> IBGE
