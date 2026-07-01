@@ -1,67 +1,458 @@
-RELATÓRIO DE AUDITORIA DE DADOS - TCC CAMPO BELO
+============================================================
+      RELATÓRIO DE AUDITORIA ANUAL E DATA QUALITY - TCC     
 ============================================================
 
-📂 PASTA: CALCULOS
+📁 PASTA TEMÁTICA: CALCULOS
+============================================================
+📄 Arquivo: calculos_2019.csv [Safra: 2019]
 ------------------------------------------------------------
-Arquivo analisado: calculos_2026.csv
+ -> Volume Total de Linhas (Nacional): 66840
+ -> Total de Colunas Identificadas: 10
 
-Total de colunas encontradas: 10
-Mapeadas: 4 | Não mapeadas: 6
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | vl_cal_sem_icent_f                                 | TETO_BASE_SEM_INCENTIVO   | Float      | 0 (0.0%)       
+⬜ [DISP] | prop_fam_em_desc_cond_acom_f                       | Não Utilizada             | Float      | 0 (0.0%)       
+⬜ [DISP] | gst_mun_sigpbf_at_menos_1_f                        | Não Utilizada             | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_tot_incent_f                                    | VALOR_TOTAL_INCENTIVOS    | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_cal_com_incent_f                                | TETO_POTENCIAL            | Float      | 0 (0.0%)       
+✅ [MAP]  | teto_rep_igdm_f                                    | TETO_REGULATORIO          | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_rep_mes_f                                       | REPASSE_REAL              | Float      | 0 (0.0%)       
+✅ [MAP]  | mt_imp_rep_s                                       | MOTIVO_IMPEDIMENTO        | Object/Str | 63799 (95.5%)  
 
->>> COLUNAS JÁ MAPEADAS (UTILIZADAS):
-✅ codigo_ibge -> IBGE
-✅ anomes_s -> COMPETENCIA
-✅ vl_cal_com_incent_f -> VALOR_CALCULADO
-✅ vl_rep_mes_f -> VALOR_REPASSADO
+...................................................................................................................
 
->>> COLUNAS DISPONÍVEIS (NÃO UTILIZADAS):
-⬜ vl_cal_sem_icent_f
-⬜ prop_fam_em_desc_cond_acom_f
-⬜ gst_mun_sigpbf_at_menos_1_f
-⬜ vl_tot_incent_f
-⬜ teto_rep_igdm_f
-⬜ mt_imp_rep_s
+📄 Arquivo: calculos_2020.csv [Safra: 2020]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 61270
+ -> Total de Colunas Identificadas: 10
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | vl_cal_sem_icent_f                                 | TETO_BASE_SEM_INCENTIVO   | Float      | 0 (0.0%)       
+⬜ [DISP] | prop_fam_em_desc_cond_acom_f                       | Não Utilizada             | Float      | 0 (0.0%)       
+⬜ [DISP] | gst_mun_sigpbf_at_menos_1_f                        | Não Utilizada             | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_tot_incent_f                                    | VALOR_TOTAL_INCENTIVOS    | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_cal_com_incent_f                                | TETO_POTENCIAL            | Float      | 0 (0.0%)       
+✅ [MAP]  | teto_rep_igdm_f                                    | TETO_REGULATORIO          | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_rep_mes_f                                       | REPASSE_REAL              | Float      | 0 (0.0%)       
+✅ [MAP]  | mt_imp_rep_s                                       | MOTIVO_IMPEDIMENTO        | Object/Str | 57550 (93.9%)  
+
+...................................................................................................................
+
+📄 Arquivo: calculos_2021.csv [Safra: 2021]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 55700
+ -> Total de Colunas Identificadas: 10
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | vl_cal_sem_icent_f                                 | TETO_BASE_SEM_INCENTIVO   | Float      | 0 (0.0%)       
+⬜ [DISP] | prop_fam_em_desc_cond_acom_f                       | Não Utilizada             | Float      | 0 (0.0%)       
+⬜ [DISP] | gst_mun_sigpbf_at_menos_1_f                        | Não Utilizada             | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_tot_incent_f                                    | VALOR_TOTAL_INCENTIVOS    | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_cal_com_incent_f                                | TETO_POTENCIAL            | Float      | 0 (0.0%)       
+✅ [MAP]  | teto_rep_igdm_f                                    | TETO_REGULATORIO          | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_rep_mes_f                                       | REPASSE_REAL              | Float      | 0 (0.0%)       
+✅ [MAP]  | mt_imp_rep_s                                       | MOTIVO_IMPEDIMENTO        | Object/Str | 52288 (93.9%)  
+
+...................................................................................................................
+
+📄 Arquivo: calculos_2021_2023.csv [Safra: 2021]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 89120
+ -> Total de Colunas Identificadas: 10
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pab_vl_teto_repasse_igdm_f                     | TETO_REGULATORIO          | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pab_vl_calculado_sem_incentivos_f              | TETO_BASE_SEM_INCENTIVO   | Float      | 0 (0.0%)       
+⬜ [DISP] | igd_pab_vl_incentivo_1_f                           | Não Utilizada             | Float      | 0 (0.0%)       
+⬜ [DISP] | igd_pab_vl_incentivo_2_f                           | Não Utilizada             | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pab_vl_total_incentivos_f                      | VALOR_TOTAL_INCENTIVOS    | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pab_vl_calculado_com_incentivos_f              | TETO_POTENCIAL            | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pab_vl_repassado_igdm_f                        | REPASSE_REAL              | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pab_motiv_imped_repasse_s                      | MOTIVO_IMPEDIMENTO        | Object/Str | 82220 (92.3%)  
+
+...................................................................................................................
+
+📄 Arquivo: calculos_2023.csv [Safra: 2023]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 55700
+ -> Total de Colunas Identificadas: 10
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | vl_cal_sem_icent_f                                 | TETO_BASE_SEM_INCENTIVO   | Float      | 0 (0.0%)       
+⬜ [DISP] | prop_fam_em_desc_cond_acom_f                       | Não Utilizada             | Float      | 0 (0.0%)       
+⬜ [DISP] | gst_mun_sigpbf_at_menos_1_f                        | Não Utilizada             | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_tot_incent_f                                    | VALOR_TOTAL_INCENTIVOS    | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_cal_com_incent_f                                | TETO_POTENCIAL            | Float      | 0 (0.0%)       
+✅ [MAP]  | teto_rep_igdm_f                                    | TETO_REGULATORIO          | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_rep_mes_f                                       | REPASSE_REAL              | Float      | 0 (0.0%)       
+✅ [MAP]  | mt_imp_rep_s                                       | MOTIVO_IMPEDIMENTO        | Object/Str | 52628 (94.5%)  
+
+...................................................................................................................
+
+📄 Arquivo: calculos_2024.csv [Safra: 2024]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 66840
+ -> Total de Colunas Identificadas: 10
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | vl_cal_sem_icent_f                                 | TETO_BASE_SEM_INCENTIVO   | Float      | 0 (0.0%)       
+⬜ [DISP] | prop_fam_em_desc_cond_acom_f                       | Não Utilizada             | Float      | 0 (0.0%)       
+⬜ [DISP] | gst_mun_sigpbf_at_menos_1_f                        | Não Utilizada             | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_tot_incent_f                                    | VALOR_TOTAL_INCENTIVOS    | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_cal_com_incent_f                                | TETO_POTENCIAL            | Float      | 0 (0.0%)       
+✅ [MAP]  | teto_rep_igdm_f                                    | TETO_REGULATORIO          | Float      | 5570 (8.3%)    
+✅ [MAP]  | vl_rep_mes_f                                       | REPASSE_REAL              | Float      | 0 (0.0%)       
+✅ [MAP]  | mt_imp_rep_s                                       | MOTIVO_IMPEDIMENTO        | Object/Str | 64614 (96.7%)  
+
+...................................................................................................................
+
+📄 Arquivo: calculos_2025.csv [Safra: 2025]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 66840
+ -> Total de Colunas Identificadas: 10
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | vl_cal_sem_icent_f                                 | TETO_BASE_SEM_INCENTIVO   | Float      | 0 (0.0%)       
+⬜ [DISP] | prop_fam_em_desc_cond_acom_f                       | Não Utilizada             | Float      | 5130 (7.7%)    
+⬜ [DISP] | gst_mun_sigpbf_at_menos_1_f                        | Não Utilizada             | Float      | 5570 (8.3%)    
+✅ [MAP]  | vl_tot_incent_f                                    | VALOR_TOTAL_INCENTIVOS    | Float      | 1300 (1.9%)    
+✅ [MAP]  | vl_cal_com_incent_f                                | TETO_POTENCIAL            | Float      | 151 (0.2%)     
+✅ [MAP]  | teto_rep_igdm_f                                    | TETO_REGULATORIO          | Float      | 33420 (50.0%)  
+✅ [MAP]  | vl_rep_mes_f                                       | REPASSE_REAL              | Float      | 204 (0.3%)     
+✅ [MAP]  | mt_imp_rep_s                                       | MOTIVO_IMPEDIMENTO        | Object/Str | 65342 (97.8%)  
+
+...................................................................................................................
+
+📄 Arquivo: calculos_2026.csv [Safra: 2026]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 22280
+ -> Total de Colunas Identificadas: 10
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | vl_cal_sem_icent_f                                 | TETO_BASE_SEM_INCENTIVO   | Float      | 0 (0.0%)       
+⬜ [DISP] | prop_fam_em_desc_cond_acom_f                       | Não Utilizada             | Float      | 0 (0.0%)       
+⬜ [DISP] | gst_mun_sigpbf_at_menos_1_f                        | Não Utilizada             | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_tot_incent_f                                    | VALOR_TOTAL_INCENTIVOS    | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_cal_com_incent_f                                | TETO_POTENCIAL            | Float      | 0 (0.0%)       
+✅ [MAP]  | teto_rep_igdm_f                                    | TETO_REGULATORIO          | Float      | 0 (0.0%)       
+✅ [MAP]  | vl_rep_mes_f                                       | REPASSE_REAL              | Float      | 156 (0.7%)     
+✅ [MAP]  | mt_imp_rep_s                                       | MOTIVO_IMPEDIMENTO        | Object/Str | 21187 (95.1%)  
+
+...................................................................................................................
+
 
 ============================================================
 
-📂 PASTA: TAXAS
+📁 PASTA TEMÁTICA: TAXAS
+============================================================
+📄 Arquivo: taxas_2019.csv [Safra: 2019]
 ------------------------------------------------------------
-Arquivo analisado: taxas_2026.csv
+ -> Volume Total de Linhas (Nacional): 66840
+ -> Total de Colunas Identificadas: 7
 
-Total de colunas encontradas: 7
-Mapeadas: 7 | Não mapeadas: 0
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_freq_escol_f                              | TAXA_FREQ_ESCOLAR         | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_agenda_saude_f                            | TAXA_ACOMP_SAUDE          | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_atual_cad_f                                     | TAXA_ATUALIZACAO          | Float      | 0 (0.0%)       
+✅ [MAP]  | igdm_f                                             | TAXA_IGDM                 | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_fator_redutor_conforme_saldo_f             | FATOR_REDUTOR_FINANCEIRO  | Object/Str | 66840 (100.0%) 
 
->>> COLUNAS JÁ MAPEADAS (UTILIZADAS):
-✅ codigo_ibge -> IBGE
-✅ anomes_s -> COMPETENCIA
-✅ tx_acomp_freq_escol_f -> TAXA_FREQ_ESCOLAR
-✅ tx_acomp_agenda_saude_f -> TAXA_ACOMP_SAUDE
-✅ tx_atual_cad_f -> TAXA_ATUALIZACAO
-✅ igdm_f -> TAXA_IGDM
-✅ igd_pbf_fator_redutor_conforme_saldo_f -> FATOR_REDUTOR_FINANCEIRO
+...................................................................................................................
 
->>> COLUNAS DISPONÍVEIS (NÃO UTILIZADAS):
+📄 Arquivo: taxas_2020.csv [Safra: 2020]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 61270
+ -> Total de Colunas Identificadas: 7
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_freq_escol_f                              | TAXA_FREQ_ESCOLAR         | Float      | 3 (0.0%)       
+✅ [MAP]  | tx_acomp_agenda_saude_f                            | TAXA_ACOMP_SAUDE          | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_atual_cad_f                                     | TAXA_ATUALIZACAO          | Float      | 0 (0.0%)       
+✅ [MAP]  | igdm_f                                             | TAXA_IGDM                 | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_fator_redutor_conforme_saldo_f             | FATOR_REDUTOR_FINANCEIRO  | Object/Str | 61270 (100.0%) 
+
+...................................................................................................................
+
+📄 Arquivo: taxas_2021.csv [Safra: 2021]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 55700
+ -> Total de Colunas Identificadas: 6
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_freq_escol_f                              | TAXA_FREQ_ESCOLAR         | Float      | 6 (0.0%)       
+✅ [MAP]  | tx_acomp_agenda_saude_f                            | TAXA_ACOMP_SAUDE          | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_atual_cad_f                                     | TAXA_ATUALIZACAO          | Float      | 0 (0.0%)       
+✅ [MAP]  | igdm_f                                             | TAXA_IGDM                 | Float      | 0 (0.0%)       
+
+...................................................................................................................
+
+📄 Arquivo: taxas_2021_2023.csv [Safra: 2021]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 89120
+ -> Total de Colunas Identificadas: 7
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pab_tafe_f                                     | TAXA_FREQ_ESCOLAR         | Float      | 3 (0.0%)       
+✅ [MAP]  | igd_pab_taas_f                                     | TAXA_ACOMP_SAUDE          | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pab_tac_f                                      | TAXA_ATUALIZACAO          | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pab_igdm_f                                     | TAXA_IGDM                 | Float      | 0 (0.0%)       
+⬜ [DISP] | igd_pab_fator_redutor_f                            | Não Utilizada             | Float      | 0 (0.0%)       
+
+...................................................................................................................
+
+📄 Arquivo: taxas_2023.csv [Safra: 2023]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 55700
+ -> Total de Colunas Identificadas: 7
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_freq_escol_f                              | TAXA_FREQ_ESCOLAR         | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_agenda_saude_f                            | TAXA_ACOMP_SAUDE          | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_atual_cad_f                                     | TAXA_ATUALIZACAO          | Float      | 0 (0.0%)       
+✅ [MAP]  | igdm_f                                             | TAXA_IGDM                 | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_fator_redutor_conforme_saldo_f             | FATOR_REDUTOR_FINANCEIRO  | Float      | 0 (0.0%)       
+
+...................................................................................................................
+
+📄 Arquivo: taxas_2024.csv [Safra: 2024]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 66840
+ -> Total de Colunas Identificadas: 7
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_freq_escol_f                              | TAXA_FREQ_ESCOLAR         | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_agenda_saude_f                            | TAXA_ACOMP_SAUDE          | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_atual_cad_f                                     | TAXA_ATUALIZACAO          | Float      | 0 (0.0%)       
+✅ [MAP]  | igdm_f                                             | TAXA_IGDM                 | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_fator_redutor_conforme_saldo_f             | FATOR_REDUTOR_FINANCEIRO  | Float      | 0 (0.0%)       
+
+...................................................................................................................
+
+📄 Arquivo: taxas_2025.csv [Safra: 2025]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 66840
+ -> Total de Colunas Identificadas: 7
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_freq_escol_f                              | TAXA_FREQ_ESCOLAR         | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_agenda_saude_f                            | TAXA_ACOMP_SAUDE          | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_atual_cad_f                                     | TAXA_ATUALIZACAO          | Float      | 0 (0.0%)       
+✅ [MAP]  | igdm_f                                             | TAXA_IGDM                 | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_fator_redutor_conforme_saldo_f             | FATOR_REDUTOR_FINANCEIRO  | Float      | 11140 (16.7%)  
+
+...................................................................................................................
+
+📄 Arquivo: taxas_2026.csv [Safra: 2026]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 22280
+ -> Total de Colunas Identificadas: 7
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_freq_escol_f                              | TAXA_FREQ_ESCOLAR         | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_acomp_agenda_saude_f                            | TAXA_ACOMP_SAUDE          | Float      | 0 (0.0%)       
+✅ [MAP]  | tx_atual_cad_f                                     | TAXA_ATUALIZACAO          | Float      | 0 (0.0%)       
+✅ [MAP]  | igdm_f                                             | TAXA_IGDM                 | Float      | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_fator_redutor_conforme_saldo_f             | FATOR_REDUTOR_FINANCEIRO  | Float      | 0 (0.0%)       
+
+...................................................................................................................
+
 
 ============================================================
 
-📂 PASTA: PUBLICO
+📁 PASTA TEMÁTICA: PUBLICO
+============================================================
+📄 Arquivo: publico_2019.csv [Safra: 2019]
 ------------------------------------------------------------
-Arquivo analisado: publico_2026.csv
+ -> Volume Total de Linhas (Nacional): 66840
+ -> Total de Colunas Identificadas: 8
 
-Total de colunas encontradas: 8
-Mapeadas: 7 | Não mapeadas: 1
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_com_freq_escolar_informada_i   | EDUCACAO_ACOMPANHADOS     | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_total_criancas_adolescentes_pbf_i      | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_cond_saude_informada_i         | SAUDE_ACOMPANHADOS        | Int        | 5570 (8.3%)    
+✅ [MAP]  | igd_pbf_qtd_total_publico_saude_i                  | SAUDE_PUBLICO_TOTAL       | Int        | 5570 (8.3%)    
+⬜ [DISP] | igd_pbf_qtd_atualizacoes_cad_ate_meio_sm_i         | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_familias_cad_ate_meio_sm_i             | QTD_FAMILIAS              | Int        | 0 (0.0%)       
 
->>> COLUNAS JÁ MAPEADAS (UTILIZADAS):
-✅ codigo_ibge -> IBGE
-✅ anomes_s -> COMPETENCIA
-✅ igd_pbf_qtd_pessoas_com_freq_escolar_informada_i -> EDUCACAO_ACOMPANHADOS
-✅ igd_pbf_qtd_total_criancas_adolescentes_pbf_i -> QTD_CRIANCAS
-✅ igd_pbf_qtd_pessoas_cond_saude_informada_i -> SAUDE_ACOMPANHADOS
-✅ igd_pbf_qtd_total_publico_saude_i -> SAUDE_PUBLICO_TOTAL
-✅ igd_pbf_qtd_familias_cad_ate_meio_sm_i -> QTD_FAMILIAS
+...................................................................................................................
 
->>> COLUNAS DISPONÍVEIS (NÃO UTILIZADAS):
-⬜ igd_pbf_qtd_atualizacoes_cad_ate_meio_sm_i
+📄 Arquivo: publico_2020.csv [Safra: 2020]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 61270
+ -> Total de Colunas Identificadas: 8
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_com_freq_escolar_informada_i   | EDUCACAO_ACOMPANHADOS     | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_total_criancas_adolescentes_pbf_i      | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_cond_saude_informada_i         | SAUDE_ACOMPANHADOS        | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_total_publico_saude_i                  | SAUDE_PUBLICO_TOTAL       | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_atualizacoes_cad_ate_meio_sm_i         | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_familias_cad_ate_meio_sm_i             | QTD_FAMILIAS              | Int        | 0 (0.0%)       
+
+...................................................................................................................
+
+📄 Arquivo: publico_2021.csv [Safra: 2021]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 55700
+ -> Total de Colunas Identificadas: 8
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_com_freq_escolar_informada_i   | EDUCACAO_ACOMPANHADOS     | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_total_criancas_adolescentes_pbf_i      | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_cond_saude_informada_i         | SAUDE_ACOMPANHADOS        | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_total_publico_saude_i                  | SAUDE_PUBLICO_TOTAL       | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_atualizacoes_cad_ate_meio_sm_i         | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_familias_cad_ate_meio_sm_i             | QTD_FAMILIAS              | Int        | 0 (0.0%)       
+
+...................................................................................................................
+
+📄 Arquivo: publico_2021_2023.csv [Safra: 2021]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 89120
+ -> Total de Colunas Identificadas: 8
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pab_qtd_pessoas_com_freq_escolar_informada_i   | EDUCACAO_ACOMPANHADOS     | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pab_qtd_total_criancas_adolescentes_pab_i      | Não Utilizada             | Int        | 0 (0.0%)       
+⬜ [DISP] | idg_pab_qtd_pessoas_cond_saude_informada_i         | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pab_qtd_total_publico_saude_i                  | SAUDE_PUBLICO_TOTAL       | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pab_qtd_atualizacoes_cad_ate_meio_sm_i         | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pab_qtd_familias_cad_ate_meio_sm_i             | QTD_FAMILIAS              | Int        | 0 (0.0%)       
+
+...................................................................................................................
+
+📄 Arquivo: publico_2023.csv [Safra: 2023]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 55700
+ -> Total de Colunas Identificadas: 8
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_com_freq_escolar_informada_i   | EDUCACAO_ACOMPANHADOS     | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_total_criancas_adolescentes_pbf_i      | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_cond_saude_informada_i         | SAUDE_ACOMPANHADOS        | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_total_publico_saude_i                  | SAUDE_PUBLICO_TOTAL       | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_atualizacoes_cad_ate_meio_sm_i         | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_familias_cad_ate_meio_sm_i             | QTD_FAMILIAS              | Int        | 0 (0.0%)       
+
+...................................................................................................................
+
+📄 Arquivo: publico_2024.csv [Safra: 2024]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 66840
+ -> Total de Colunas Identificadas: 8
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_com_freq_escolar_informada_i   | EDUCACAO_ACOMPANHADOS     | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_total_criancas_adolescentes_pbf_i      | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_cond_saude_informada_i         | SAUDE_ACOMPANHADOS        | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_total_publico_saude_i                  | SAUDE_PUBLICO_TOTAL       | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_atualizacoes_cad_ate_meio_sm_i         | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_familias_cad_ate_meio_sm_i             | QTD_FAMILIAS              | Int        | 0 (0.0%)       
+
+...................................................................................................................
+
+📄 Arquivo: publico_2025.csv [Safra: 2025]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 66840
+ -> Total de Colunas Identificadas: 8
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_com_freq_escolar_informada_i   | EDUCACAO_ACOMPANHADOS     | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_total_criancas_adolescentes_pbf_i      | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_cond_saude_informada_i         | SAUDE_ACOMPANHADOS        | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_total_publico_saude_i                  | SAUDE_PUBLICO_TOTAL       | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_atualizacoes_cad_ate_meio_sm_i         | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_familias_cad_ate_meio_sm_i             | QTD_FAMILIAS              | Int        | 0 (0.0%)       
+
+...................................................................................................................
+
+📄 Arquivo: publico_2026.csv [Safra: 2026]
+------------------------------------------------------------
+ -> Volume Total de Linhas (Nacional): 22280
+ -> Total de Colunas Identificadas: 8
+
+STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
+-------------------------------------------------------------------------------------------------------------------
+✅ [MAP]  | codigo_ibge                                        | CODIGO_IBGE               | Int        | 0 (0.0%)       
+✅ [MAP]  | anomes_s                                           | COMPETENCIA               | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_com_freq_escolar_informada_i   | EDUCACAO_ACOMPANHADOS     | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_total_criancas_adolescentes_pbf_i      | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_pessoas_cond_saude_informada_i         | SAUDE_ACOMPANHADOS        | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_total_publico_saude_i                  | SAUDE_PUBLICO_TOTAL       | Int        | 0 (0.0%)       
+⬜ [DISP] | igd_pbf_qtd_atualizacoes_cad_ate_meio_sm_i         | Não Utilizada             | Int        | 0 (0.0%)       
+✅ [MAP]  | igd_pbf_qtd_familias_cad_ate_meio_sm_i             | QTD_FAMILIAS              | Int        | 0 (0.0%)       
+
+...................................................................................................................
+
 
 ============================================================
 
