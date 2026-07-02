@@ -17,7 +17,7 @@ O Cadastro Único (CadÚnico) e o acompanhamento das condicionalidades do Bolsa 
 
 A visualização completa dos indicadores financeiros e das taxas de qualidade do tripé de condicionalidades está disponível em um painel executivo online.
 
-🔗 **[Acessar o Dashboard no Power BI Online](https://app.powerbi.com/view?r=eyJrIjoiZGE0MTFkYTgtNWZjYi00MWQ5LTkyMzctNTdkNGE0YjAzNWIzIiwidCI6IjkxMGFjMTUzLTc0NWMtNGZkNy1iNDNkLTQyNGE3Yjc5OTQyYiJ9&pageName=f8873520a2400a91b393)**
+🔗 **[Acessar o Dashboard no Power BI Online](https://app.powerbi.com/view?r=eyJrIjoiMDVlMTI1NWYtODYzMy00MmE1LTkxNjAtNmEzZWM3Mzg2MWNiIiwidCI6IjE4MzJhNTBkLWZmYWYtNDhiYi1iM2NjLWU4MDk3ZWM4NGVlZiJ9)**
 
 ---
 
