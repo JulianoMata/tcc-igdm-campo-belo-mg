@@ -49,12 +49,22 @@ TCC_CAMPOBELO/
 │   ├── CALCULOS/          # Histórico de valores liquidados e repassados
 │   ├── PUBLICO/           # Quantitativos de famílias e metas de público-alvo
 │   └── TAXAS/             # Índices e taxas de cobertura das condicionalidades
-├── dados_tratados/        # Datasets consolidados e serializados em formato Pickle (.pkl)
-├── notebooks/             # Pipelines sequenciais de Engenharia, Análise e Prescrição
+├── dados_tratados/        # Datasets consolidados e dicionário auxiliar
+│   ├── dataset_financeiro_tratado.pkl  # Dataset serializado para consumo rápido no Python
+│   ├── dataset_financeiro_tratado.xlsx # Dataset em formato Excel para auditoria ou BI
+│   └── dicionario_dados.csv            # Matriz de metadados das variáveis tratadas
+├── notebooks/             # Pipelines sequenciais do projeto (Jupyter Notebooks)
+│   ├── 01_ETL_Integrado.ipynb          # Extração, limpeza e consolidação das bases de dados
+│   ├── 02_diagnostico_financeiro_kpis.ipynb # Análise exploratória e cálculo de indicadores do IGD-M
+│   └── 03_simulacao_cenarios_plano_acao.ipynb # Modelagem preditiva, simulações e prescrição de metas
 ├── PBIX/                  # Arquivos de modelagem visual e Dashboards (Power BI)
-├── scripts/               # Scripts Python auxiliares (Auditoria e validação)
+├── scripts/               # Scripts Python auxiliares e rotinas de validação
+│   ├── auditoria_colunas.py   # Mapeamento e consistência das colunas nos datasets
+│   ├── gerar_dicionario.py    # Geração automatizada do arquivo de metadados em CSV
+│   ├── relatorio_colunas.txt  # Output textual da estrutura e integridade das colunas
+│   └── verificar_bruto.py     # Script de validação inicial dos arquivos brutos federais
 ├── venv/                  # Ambiente virtual Python isolado (Ignorado no Git)
-├── .gitignore             # Exclusão defensiva de dados brutos e ambientes
+├── .gitignore             # Exclusão defensiva de dados brutos, caches e ambientes
 ├── DICIONARIO_DADOS.md    # Metadados e documentação técnica dos schemas das tabelas
 ├── LICENSE                # Licença de uso do projeto (MIT)
 ├── README.md              # Documentação principal do repositório
