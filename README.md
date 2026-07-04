@@ -107,24 +107,49 @@ O projeto utiliza a Ciência de Dados para transformar registros administrativos
 > 📉 **Nota Média Recente (IGD-M):** **87%** (0.87) de eficiência.
 > 💸 **Custo de Oportunidade Anual:** **R$ 23.435,10** em recursos federais não acessados.
 
+* **O Gargalo Estrutural:** A análise de correlação de Pearson revelou um coeficiente de **$r = +0.66$**. Isso demonstra cientificamente que, enquanto a base de dados de famílias (escala) expandiu fortemente, a capacidade operacional de acompanhamento entrou em um *platô técnico*. O principal reflexo desse gap foi o represamento de indivíduos fora do radar de acompanhamento das condicionalidades de saúde, evidenciando falhas críticas no fluxo de alimentação e sincronização de dados junto ao sistema do **Conservador (SISAB/e-SUS)**.
+
+---
+
+## 💡 Principais Resultados & Impacto Prático
+
+O projeto utiliza a Ciência de Dados para transformar registros administrativos em decisões estratégicas de gestão pública, dividindo-se em duas vertentes: o diagnóstico do cenário fiscal atual e a projeção de retorno do plano de ação proposto.
+
+---
+
+### 🔍 O Diagnóstico de Eficiência Atual
+
+> 📉 **Nota Média Recente (IGD-M):** **87%** (0.87) de eficiência.
+> 💸 **Custo de Oportunidade Anual:** **R$ 23.435,10** em recursos federais não acessados.
+
 * **O Gargalo Estrutural:** A análise de correlação de Pearson revelou um coeficiente de **$r = +0.66$**. Isso demonstra cientificamente que, enquanto a base de dados de famílias (escala) expandiu fortemente, a capacidade operacional de acompanhamento entrou em um *platô técnico*. O principal reflexo desse gap físico foi o represamento de indivíduos fora do radar de acompanhamento das condicionalidades de saúde (SUS).
 
 ---
 
 ### 🚀 Viabilidade e Retorno do Plano de Ação
 
-Para mitigar a perda financeira e garantir a segurança jurídica do município, o algoritmo de simulação avaliou o impacto de mutirões focados na atualização de cadastros vencidos há mais de 24 meses:
+Para mitigar a perda financeira e garantir a segurança jurídica do município, o algoritmo de simulação avaliou o impacto de mutirões focados na atualização de cadastros vencidos através de três cenários de eficiência na busca ativa:
 
 | Cenário Analisado | Meta de Recuperação | Impacto Financeiro (Retorno ao Fundo) | Viabilidade Operacional |
 | :--- | :---: | :---: | :--- |
-| **Cenário Moderado** | **60%** | **+ R$ 14.061,06 / ano** | Alta (Foco em cadastros críticos > 24 meses) |
-| **Cenário Otimista** | **100%** | **+ R$ 23.435,10 / ano** | Médio-Alto (Demanda varredura completa) |
+| **Cenário Conservador** | **30%** | **+ R$ 7.030,53 / ano** | Baixo Risco (Recuperação mínima com esforço habitual) |
+| **Cenário Moderado** | **60%** | **+ R$ 14.061,06 / ano** | Alta Viabilidade (Foco em cadastros críticos > 24 meses) |
+| **Cenário Otimista** | **100%** | **+ R$ 23.435,10 / ano** | Desafiador (Demanda varredura completa e atualização plena) |
 
-#### 🛡️ A Lógica do Seguro (Análise de ROI)
-O custo anual estimado para execução das rodadas de mutirão e ampliação sazonal da jornada de entrevistas é de **R$ 12.000,00**. 
+#### 🛡️ A Lógica da Eficiência Preventiva & Análise de ROI (Retorno sobre Investimento)
 
-* **Autossustentável:** No cenário moderado, o plano já se paga sozinho, gerando um superávit real para o Fundo Municipal de Assistência Social.
-* **Mitigação de Risco Fiscal:** O investimento representa **menos de 2.5%** do orçamento anual total protegido pelo IGD-M. Ele funciona como um seguro ativo, afastando em **100%** o risco de sanções, advertências ou bloqueios totais dos repasses por descumprimento do piso legal de 80% de eficiência exigido pelo Governo Federal.
+O planejamento estratégico avalia como a aplicação de Ciência de Dados pode blindar o orçamento do município, otimizando as rotinas internas da equipe sem a necessidade de novos aportes financeiros, contratações ou horas extras. A viabilidade financeira e o potencial de captação de recursos variam conforme a eficiência dos cenários simulados:
+
+* **Métrica de ROI (Retorno sobre Investimento):**
+  * 📉 **Cenário Conservador:** Recuperação de **R\$ 7.030,53 / ano** (atingido apenas com o realinhamento da busca ativa rotineira e cruzamento de dados interno).
+  * ⚖️ **Cenário Moderado:** Recuperação de **R\$ 14.061,06 / ano** (ponto de otimização focado na triagem inteligente de cadastros críticos com mais de 24 meses de defasagem).
+  * 🚀 **Cenário Otimista:** Recuperação de **R\$ 23.435,10 / ano** (teto máximo de eficiência e captação de recursos federais represados).
+
+* **Mitigação de Risco Fiscal & Estabilidade:** O município opera hoje em um patamar seguro de **87% de eficiência**, consolidando uma boa margem de estabilidade e estando a apenas 3 pontos percentuais de atingir a meta de excelência de 90%. O uso das ferramentas de dados atua como um mecanismo preventivo de proteção de receita, garantindo que o município mantenha sua performance estável e permaneça distante da zona crítica.
+
+* **Triagem Inteligente na Contenção de Despesas (Foco em BPC):** Em cenários reais de limitação de recursos de custeio (como restrição de combustível e suspensão de horas extras), a inteligência de dados substitui a busca ativa genérica por um **direcionamento cirúrgico**. O algoritmo prioriza automaticamente o cruzamento de dados de beneficiários do **BPC (Benefício de Prestação Continuada)** cujos cadastros estejam entrando na janela de revisão de 24 meses. Diferente de outros programas, o BPC possui regras rígidas de cruzamento de dados com o INSS e histórico de suspensão imediata do benefício pago a idosos e pessoas com deficiência. A identificação antecipada dessas famílias permite que o CRAS realize o atendimento preventivo de forma interna e rotineira, evitando o bloqueio do benefício do cidadão sem gerar custos de deslocamento para a prefeitura.
+
+* **Fundamentação Legal do Piso Regulatório (80%):** Conforme as diretrizes normativas do Ministério do Desenvolvimento Social (MDS) que regulamentam o IGD-M, o índice de **0,80** é o limite mínimo de tolerância para a gestão descentralizada, abaixo do qual aplicam-se sanções em cascata (advertências e bloqueio total de repasses). A otimização preditiva das filas de atendimento protege o orçamento da pasta, mantendo a nota municipal e garantindo a continuidade dos repasses federais com custo zero de execução de campo.
 ---
 
 ## ⚙️ Como Executar o Projeto
