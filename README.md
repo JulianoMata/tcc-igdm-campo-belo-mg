@@ -96,17 +96,35 @@ O projeto foi estruturado de forma coesa e modular em 3 notebooks sequenciais e 
 
 ---
 
-## 💡 Principais Resultados do Estudo
+## 💡 Principais Resultados & Impacto Prático
 
-### O Diagnóstico de Eficiência Atual
-* **Nota Média Recente (IGD-M):** O município opera em um patamar médio recente de **87% de eficiência** (base 1.0).
-* **Custo de Oportunidade:** A perda estrutural por não atingir o teto de excelência regulatória gera um dreno anual estimado em **R$ 23.435,10** de dinheiro deixado na mesa.
-* **O Gargalo:** A análise estatística provou que o volume de famílias (escala) expandiu fortemente ($r = +0.66$), mas a prefeitura operou em um platô técnico de eficiência, gerando um gap físico de indivíduos fora do radar de acompanhamento do SUS.
+O projeto utiliza a Ciência de Dados para transformar registros administrativos em decisões estratégicas de gestão pública, dividindo-se em duas vertentes: o diagnóstico do cenário fiscal atual e a projeção de retorno do plano de ação proposto.
 
-### Viabilidade e Retorno do Plano de Ação
-* **Cenário Moderado (Meta de 60% de Recuperação):** Capaz de resgatar **R$ 14.061,06/ano** para o Fundo Municipal de Assistência Social através de mutirões focados em cadastros vencidos há mais de 24 meses.
-* **A Lógica do Seguro:** O custo estimado para execução de mutirões e ampliação sazonal de jornada (R$ 12.000,00/ano) representa menos de **2.5%** do orçamento anual protegido. O investimento se paga sozinho e afasta em 100% o risco de punições ou bloqueios totais do repasse federal por descumprimento do piso legal de 80%.
+---
 
+### 🔍 O Diagnóstico de Eficiência Atual
+
+> 📉 **Nota Média Recente (IGD-M):** **87%** (0.87) de eficiência.
+> 💸 **Custo de Oportunidade Anual:** **R$ 23.435,10** em recursos federais não acessados.
+
+* **O Gargalo Estrutural:** A análise de correlação de Pearson revelou um coeficiente de **$r = +0.66$**. Isso demonstra cientificamente que, enquanto a base de dados de famílias (escala) expandiu fortemente, a capacidade operacional de acompanhamento entrou em um *platô técnico*. O principal reflexo desse gap físico foi o represamento de indivíduos fora do radar de acompanhamento das condicionalidades de saúde (SUS).
+
+---
+
+### 🚀 Viabilidade e Retorno do Plano de Ação
+
+Para mitigar a perda financeira e garantir a segurança jurídica do município, o algoritmo de simulação avaliou o impacto de mutirões focados na atualização de cadastros vencidos há mais de 24 meses:
+
+| Cenário Analisado | Meta de Recuperação | Impacto Financeiro (Retorno ao Fundo) | Viabilidade Operacional |
+| :--- | :---: | :---: | :--- |
+| **Cenário Moderado** | **60%** | **+ R$ 14.061,06 / ano** | Alta (Foco em cadastros críticos > 24 meses) |
+| **Cenário Otimista** | **100%** | **+ R$ 23.435,10 / ano** | Médio-Alto (Demanda varredura completa) |
+
+#### 🛡️ A Lógica do Seguro (Análise de ROI)
+O custo anual estimado para execução das rodadas de mutirão e ampliação sazonal da jornada de entrevistas é de **R$ 12.000,00**. 
+
+* **Autossustentável:** No cenário moderado, o plano já se paga sozinho, gerando um superávit real para o Fundo Municipal de Assistência Social.
+* **Mitigação de Risco Fiscal:** O investimento representa **menos de 2.5%** do orçamento anual total protegido pelo IGD-M. Ele funciona como um seguro ativo, afastando em **100%** o risco de sanções, advertências ou bloqueios totais dos repasses por descumprimento do piso legal de 80% de eficiência exigido pelo Governo Federal.
 ---
 
 ## ⚙️ Como Executar o Projeto
