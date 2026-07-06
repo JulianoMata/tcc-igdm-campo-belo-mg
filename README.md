@@ -75,14 +75,19 @@ TCC_CAMPOBELO/
 
 ## 🚀 Etapas do Pipeline Analítico
 
-O projeto foi estruturado de forma coesa e modular em 3 notebooks sequenciais e scripts auxiliares:
+O projeto foi estruturado de forma coesa, unindo scripts Python utilitários para governança de dados e notebooks sequenciais para análise avançada:
 
-### 🛠️ Engenharia de Dados Auxiliar (`scripts/auditoria_de_colunas.py`)
-* **Função:** Script fundamental para validar a integridade estrutural das matrizes brutas do MDS, mapeando variações de nomenclatura e garantindo a consistência do esquema antes da consolidação.
+### 🛠️ Governança e Engenharia de Dados Auxiliar (`scripts/`)
+Antes do início do tratamento, uma esteira de scripts garante a confiabilidade e a documentação do ecossistema de dados:
+* **`verificar_bruto.py` (Validação de Entrada):** Realiza uma checagem prévia e automatizada na pasta de matrizes originais do Governo Federal, garantindo que os arquivos essenciais estejam presentes antes da execução do pipeline.
+* **`auditoria_colunas.py` (Consistência de Esquema):** Mapeia e valida a integridade estrutural das tabelas do MDS ao longo dos anos, identificando variações históricas de nomenclatura e exportando o diagnóstico detalhado no arquivo utilitário **`relatorio_colunas.txt`**.
+* **`gerar_dicionario.py` (Metadados Automatizados):** Lê os schemas dos dados processados e gera de forma automatizada duas saídas distintas: o arquivo estruturado **`dicionario_dados.csv`** (salvo na pasta `dados_tratados/` para consumo de sistemas) e o arquivo de documentação **`DICIONARIO_DADOS.md`** (salvo na raiz do projeto para leitura direta no repositório).
+
+---
 
 ### 1️⃣ ETL e Integração (`notebooks/01_ETL_Integrado.ipynb`)
 * **Desafio:** Resolver a descontinuidade temporal e a fragmentação de múltiplas bases anuais dispersas.
-* **Solução:** Desenvolvimento de um pipeline automatizado de extração, limpeza, tipagem temporal padronizada (`DATA_ISO`) e persistência segura em formato binário Pickle (.pkl) na pasta `dados_tratados/`.
+* **Solução:** Desenvolvimento de um pipeline automatizado de extração, limpeza, tipagem temporal padronizada (`DATA_ISO`) e persistência segura em formato binário Pickle (`.pkl`) e Excel (`.xlsx`) na pasta `dados_tratados/`.
 
 ### 2️⃣ Diagnóstico de KPIs e Gargalos (`notebooks/02_diagnostico_financeiro_kpis.ipynb`)
 * **Análise:** Auditoria histórica dos repasses e cálculo dos indicadores de desempenho (KPIs) do Tripé da Qualidade (Saúde, Educação e Gestão).
@@ -92,7 +97,7 @@ O projeto foi estruturado de forma coesa e modular em 3 notebooks sequenciais e 
 ### 3️⃣ Simulação de Cenários e Plano de Ação Prescritivo (`notebooks/03_simulacao_cenarios_plano_acao.ipynb`)
 * **Calculadora de ROI:** Modelagem financeira parametrizada que isola a perda estrutural gerada pela ineficiência da Nota IGD-M, limpando com precisão falsos positivos gerados por repasses retroativos federais.
 * **Simulação de Sensibilidade:** Projeção matemática de cenários de resgate de caixa (Conservador, Moderado e Otimista) baseados em níveis realistas de esforço de gestão.
-* **Análise de Viabilidade:** Avaliação robusta do custo operacional frente à receita preservada, validando a lógica de "blindagem orçamentária" sob as rígidas travas da LRF em ano eleitoral.
+* **Análise de Viabilidade:** Avaliação robusta da otimização operacional frente à receita preservada, validando a lógica de "blindagem orçamentária" e priorização cirúrgica de públicos críticos (como o BPC) sob as rígidas travas de contenção de despesas da pasta.
 
 ---
 
@@ -100,29 +105,19 @@ O projeto foi estruturado de forma coesa e modular em 3 notebooks sequenciais e 
 
 O projeto utiliza a Ciência de Dados para transformar registros administrativos em decisões estratégicas de gestão pública, dividindo-se em duas vertentes: o diagnóstico do cenário fiscal atual e a projeção de retorno do plano de ação proposto.
 
----
-
-### 🔍 O Diagnóstico de Eficiência Atual
-
-> 📉 **Nota Média Recente (IGD-M):** **87%** (0.87) de eficiência.
-> 💸 **Custo de Oportunidade Anual:** **R$ 23.435,10** em recursos federais não acessados.
-
-* **O Gargalo Estrutural:** A análise de correlação de Pearson revelou um coeficiente de **$r = +0.66$**. Isso demonstra cientificamente que, enquanto a base de dados de famílias (escala) expandiu fortemente, a capacidade operacional de acompanhamento entrou em um *platô técnico*. O principal reflexo desse gap foi o represamento de indivíduos fora do radar de acompanhamento das condicionalidades de saúde, evidenciando falhas críticas no fluxo de alimentação e sincronização de dados junto ao sistema do **Conservador (SISAB/e-SUS)**.
-
----
-
-## 💡 Principais Resultados & Impacto Prático
-
-O projeto utiliza a Ciência de Dados para transformar registros administrativos em decisões estratégicas de gestão pública, dividindo-se em duas vertentes: o diagnóstico do cenário fiscal atual e a projeção de retorno do plano de ação proposto.
+A abordagem substitui o modelo tradicional de busca ativa massiva por uma estratégia de **inteligência operacional preditiva**. Com isso, o modelo atua diretamente no equilíbrio entre a eficiência fiscal do município e a proteção social ativa, convertendo os dados tratados em uma ferramenta de planejamento capaz de otimizar a rotina de atendimento sem gerar novas despesas operacionais.
 
 ---
 
 ### 🔍 O Diagnóstico de Eficiência Atual
 
 > 📉 **Nota Média Recente (IGD-M):** **87%** (0.87) de eficiência.
-> 💸 **Custo de Oportunidade Anual:** **R$ 23.435,10** em recursos federais não acessados.
+> 💸 **Custo de Oportunidade Anual:** **R\$ 23.435,10** em recursos federais não acessados.
 
-* **O Gargalo Estrutural:** A análise de correlação de Pearson revelou um coeficiente de **$r = +0.66$**. Isso demonstra cientificamente que, enquanto a base de dados de famílias (escala) expandiu fortemente, a capacidade operacional de acompanhamento entrou em um *platô técnico*. O principal reflexo desse gap físico foi o represamento de indivíduos fora do radar de acompanhamento das condicionalidades de saúde (SUS).
+* **O Gargalo Estrutural ($r = +0.66$):** A análise estatística provou que o número de famílias no Cadastro Único cresceu aceleradamente, mas a estrutura para registrar os acompanhamentos não acompanhou o mesmo ritmo. Isso gerou um represamento de beneficiários fora do radar das condicionalidades de saúde.
+
+* **O Impacto no Sistema do Conservador:** Na prática, muitas pesagens e vacinações são realizadas na ponta, mas a informação demora a ser digitada ou sincronizada no sistema do **Conservador (SISAB/e-SUS)**. Como o Governo Federal não enxerga esses dados em tempo hábil, ele interpreta a defasagem como descumprimento de meta, aplicando descontos automáticos no repasse mensal do IGD-M e gerando a perda financeira anual de **R\$ 23.435,10**.
+
 
 ---
 
@@ -132,9 +127,9 @@ Para mitigar a perda financeira e garantir a segurança jurídica do município,
 
 | Cenário Analisado | Meta de Recuperação | Impacto Financeiro (Retorno ao Fundo) | Viabilidade Operacional |
 | :--- | :---: | :---: | :--- |
-| **Cenário Conservador** | **30%** | **+ R$ 7.030,53 / ano** | Baixo Risco (Recuperação mínima com esforço habitual) |
-| **Cenário Moderado** | **60%** | **+ R$ 14.061,06 / ano** | Alta Viabilidade (Foco em cadastros críticos > 24 meses) |
-| **Cenário Otimista** | **100%** | **+ R$ 23.435,10 / ano** | Desafiador (Demanda varredura completa e atualização plena) |
+| **Cenário Conservador** | **30%** | **+ R\$ 7.030,53 / ano** | Baixo Risco (Recuperação mínima com esforço habitual) |
+| **Cenário Moderado** | **60%** | **+ R\$ 14.061,06 / ano** | Alta Viabilidade (Foco em cadastros críticos > 24 meses) |
+| **Cenário Otimista** | **100%** | **+ R\$ 23.435,10 / ano** | Desafiador (Demanda varredura completa e atualização plena) |
 
 #### 🛡️ A Lógica da Eficiência Preventiva & Análise de ROI (Retorno sobre Investimento)
 
@@ -160,18 +155,18 @@ Para reproduzir as análises localmente:
 
 ```bash
 # Clone o repositório
-git clone [https://github.com/JulianoMata/tcc-igdm-campo-belo-mg.git](https://github.com/JulianoMata/tcc-igdm-campo-belo-mg.git)
+git clone https://github.com/JulianoMata/tcc-igdm-campo-belo-mg.git
 
 # Entre na pasta raiz do projeto
 cd tcc-igdm-campo-belo-mg
 
-# Crie e ative o ambiente virtual (Recomendado)
-# Windows:
+# Crie o ambiente virtual (Recomendado)
 python -m venv venv
-venv\Scripts\activate
 
-# Linux/Mac:
-python3 -m venv venv
+# Ative o ambiente virtual
+# No Windows:
+venv\Scripts\activate
+# No Linux/Mac:
 source venv/bin/activate
 
 # Instale as dependências estruturais
@@ -186,7 +181,7 @@ O projeto foi inteiramente estruturado e testado utilizando o **Visual Studio Co
 # Abra a pasta do projeto no VS Code
 code .
 ```
-*💡 Nota de Execução: Certifique-se de possuir a extensão oficial Jupyter instalada no seu VS Code. Para garantir a consistência das simulações e o correto carregamento dos arquivos serializados em disco (.pkl), navegue até a pasta notebooks/ e execute as células respeitando rigorosamente a ordem sequencial cronológica (01_ETL_Integrado.ipynb a 03_simulacao_cenarios_plano_acao.ipynb).
+💡 Nota de Execução: Certifique-se de possuir a extensão oficial Jupyter instalada no seu VS Code. Para garantir a consistência das simulações e o correto carregamento dos arquivos serializados em disco (.pkl), navegue até a pasta notebooks/ e execute as células respeitando rigorosamente a ordem sequencial cronológica (01_ETL_Integrado.ipynb a 03_simulacao_cenarios_plano_acao.ipynb).
 
 ---
 
