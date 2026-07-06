@@ -130,6 +130,7 @@ Para mitigar a perda financeira e garantir a segurança jurídica do município,
 | **Cenário Conservador** | **30%** | **+ R\$ 7.030,53 / ano** | Baixo Risco (Recuperação mínima com esforço habitual) |
 | **Cenário Moderado** | **60%** | **+ R\$ 14.061,06 / ano** | Alta Viabilidade (Foco em cadastros críticos > 24 meses) |
 | **Cenário Otimista** | **100%** | **+ R\$ 23.435,10 / ano** | Desafiador (Demanda varredura completa e atualização plena) |
+---
 
 #### 🛡️ A Lógica da Eficiência Preventiva & Análise de ROI (Retorno sobre Investimento)
 
