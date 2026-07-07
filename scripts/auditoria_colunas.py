@@ -3,6 +3,7 @@ import os
 import glob
 import sys
 import re
+import numpy as np
 
 # --- CORREÇÃO DO ERRO DE EMOJI (WINDOWS) ---
 sys.stdout.reconfigure(encoding='utf-8') # type: ignore
@@ -70,11 +71,13 @@ def auditar_tudo():
         return
 
     pastas = ['CALCULOS', 'TAXAS', 'PUBLICO']
-    arquivo_saida = os.path.join(os.path.dirname(__file__), "relatorio_colunas.txt")
+    
+    # Define a gravação do log diretamente dentro de dados_tratados
+    arquivo_saida = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "dados_tratados", "relatorio_colunas.txt"))
     
     with open(arquivo_saida, "w", encoding="utf-8") as f:
         f.write("============================================================\n")
-        f.write("      RELATÓRIO DE AUDITORIA ANUAL E DATA QUALITY - TCC     \n")
+        f.write("       RELATÓRIO DE AUDITORIA ANUAL E DATA QUALITY - TCC     \n")
         f.write("============================================================\n\n")
         
         for pasta in pastas:
@@ -152,8 +155,8 @@ def auditar_tudo():
                 f.write("\n" + "."*115 + "\n\n")
             f.write("\n" + "="*60 + "\n\n")
 
-    print(f"\n🚀 Inspeção Concluída!")
-    print(f"📄 Relatório de Data Quality salvo em: {arquivo_saida}")
+    print(f"\n🚀 Inspeção Concluída com Sucesso!")
+    print(f"📄 Relatório de Data Quality gerado em: {arquivo_saida}")
 
 if __name__ == "__main__":
     auditar_tudo()

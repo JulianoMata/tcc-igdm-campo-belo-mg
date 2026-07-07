@@ -1,5 +1,5 @@
 ============================================================
-      RELATÓRIO DE AUDITORIA ANUAL E DATA QUALITY - TCC     
+       RELATÓRIO DE AUDITORIA ANUAL E DATA QUALITY - TCC     
 ============================================================
 
 📁 PASTA TEMÁTICA: CALCULOS
@@ -26,7 +26,7 @@ STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO      
 
 📄 Arquivo: calculos_2020.csv [Safra: 2020]
 ------------------------------------------------------------
- -> Volume Total de Linhas (Nacional): 61270
+ -> Volume Total de Linhas (Nacional): 66840
  -> Total de Colunas Identificadas: 10
 
 STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
@@ -40,7 +40,7 @@ STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO      
 ✅ [MAP]  | vl_cal_com_incent_f                                | TETO_POTENCIAL            | Float      | 0 (0.0%)       
 ✅ [MAP]  | teto_rep_igdm_f                                    | TETO_REGULATORIO          | Float      | 0 (0.0%)       
 ✅ [MAP]  | vl_rep_mes_f                                       | REPASSE_REAL              | Float      | 0 (0.0%)       
-✅ [MAP]  | mt_imp_rep_s                                       | MOTIVO_IMPEDIMENTO        | Object/Str | 57550 (93.9%)  
+✅ [MAP]  | mt_imp_rep_s                                       | MOTIVO_IMPEDIMENTO        | Object/Str | 62863 (94.0%)  
 
 ...................................................................................................................
 
@@ -188,7 +188,7 @@ STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO      
 
 📄 Arquivo: taxas_2020.csv [Safra: 2020]
 ------------------------------------------------------------
- -> Volume Total de Linhas (Nacional): 61270
+ -> Volume Total de Linhas (Nacional): 66840
  -> Total de Colunas Identificadas: 7
 
 STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
@@ -199,7 +199,7 @@ STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO      
 ✅ [MAP]  | tx_acomp_agenda_saude_f                            | TAXA_ACOMP_SAUDE          | Float      | 0 (0.0%)       
 ✅ [MAP]  | tx_atual_cad_f                                     | TAXA_ATUALIZACAO          | Float      | 0 (0.0%)       
 ✅ [MAP]  | igdm_f                                             | TAXA_IGDM                 | Float      | 0 (0.0%)       
-✅ [MAP]  | igd_pbf_fator_redutor_conforme_saldo_f             | FATOR_REDUTOR_FINANCEIRO  | Object/Str | 61270 (100.0%) 
+✅ [MAP]  | igd_pbf_fator_redutor_conforme_saldo_f             | FATOR_REDUTOR_FINANCEIRO  | Float      | 61270 (91.7%)  
 
 ...................................................................................................................
 
@@ -329,7 +329,7 @@ STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO      
 
 📄 Arquivo: publico_2020.csv [Safra: 2020]
 ------------------------------------------------------------
- -> Volume Total de Linhas (Nacional): 61270
+ -> Volume Total de Linhas (Nacional): 66840
  -> Total de Colunas Identificadas: 8
 
 STATUS   | COLUNA ORIGINAL                                    | MAPEAMENTO                | TIPO       | NULOS / MISSING
