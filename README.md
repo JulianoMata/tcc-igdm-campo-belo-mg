@@ -177,7 +177,7 @@ Para reproduzir as análises localmente:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/JulianoMata/tcc-igdm-campo-belo-mg.git
+git clone [https://github.com/JulianoMata/tcc-igdm-campo-belo-mg.git](https://github.com/JulianoMata/tcc-igdm-campo-belo-mg.git)
 
 # Entre na pasta raiz do projeto
 cd tcc-igdm-campo-belo-mg
@@ -216,18 +216,21 @@ code .
 
 ### 📝 Licença
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
 
 ### 🤝 Contribuições
 
-Contribuições focadas em otimização de algoritmos de inteligência governamental e melhorias em pipelines de dados públicos são muito bem-vindas! Sinta-se à vontade para abrir issues ou submeter pull requests.
+Contribuições voltadas à otimização de algoritmos de inteligência governamental, engenharia de dados públicos e expansão do modelo analítico para outros municípios são muito bem-vindas! Sinta-se à vontade para abrir uma *issue* ou submeter um *pull request*.
+
+---
 
 ### 📞 Contato
 
-Para dúvidas, insights ou discussões acadêmicas sobre ciência de dados aplicada à governança e finanças públicas:
+Para dúvidas, insights ou discussões técnicas sobre Ciência de Dados aplicada à governança e finanças públicas:
 
-**Juliano França da Mata**
-
-📧 <jfmatta@gmail.com>  
-💼 [LinkedIn](https://www.linkedin.com/in/julianomata)
-🐈 [GitHub](https://github.com/JulianoMata)
+**Juliano França da Mata**  
+📧 [jfmatta@gmail.com](mailto:jfmatta@gmail.com)  
+💼 [LinkedIn](https://www.linkedin.com/in/julianomata)  
+🐙 [GitHub](https://github.com/JulianoMata)
