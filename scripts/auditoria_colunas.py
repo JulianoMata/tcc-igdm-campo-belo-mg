@@ -1,12 +1,13 @@
+from pathlib import Path
 import pandas as pd
-import os
 import glob
 import sys
 import re
-import numpy as np
 
-# --- CORREÇÃO DO ERRO DE EMOJI (WINDOWS) ---
-sys.stdout.reconfigure(encoding='utf-8') # type: ignore
+# --- CORREÇÃO DE EMOJIS NO TERMINAL DO WINDOWS ---
+reconfigure_stdout = getattr(sys.stdout, 'reconfigure', None)
+if callable(reconfigure_stdout):
+    reconfigure_stdout(encoding='utf-8')
 
 # --- 1. CONFIGURAÇÃO DO MAPA SINCRO (Padronizado e Unificado) ---
 MAPA_COLUNAS_ATUAL = {
@@ -57,23 +58,25 @@ MAPA_COLUNAS_ATUAL = {
     'igd_pab_qtd_pessoas_com_freq_escolar_informada_i': 'EDUCACAO_ACOMPANHADOS'
 }
 
-def extrair_ano(nome_arquivo):
-    """Extrai o ano do nome do arquivo (ex: calculos_2024.csv -> 2024)"""
+def extrair_ano(nome_arquivo: str) -> str:
+    """Extrai o ano do nome do arquivo (ex: calculos_2024.csv -> 2024)."""
     match = re.search(r'20\d{2}', nome_arquivo)
     return match.group(0) if match else "Indefinido"
 
 def auditar_tudo():
     print("🕵️‍♂️ INICIANDO MONITORAMENTO ANUAL DE COMPORTAMENTO DE DADOS...")
     
-    caminho_base = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "dados_brutos"))
-    if not os.path.exists(caminho_base):
+    diretorio_raiz = Path(__file__).resolve().parent.parent
+    caminho_base = diretorio_raiz / "dados_brutos"
+    pasta_saida = diretorio_raiz / "dados_tratados"
+    arquivo_saida = pasta_saida / "relatorio_colunas.txt"
+    
+    if not caminho_base.exists():
         print(f"❌ Erro: Pasta de dados não encontrada em: {caminho_base}")
         return
 
+    pasta_saida.mkdir(parents=True, exist_ok=True)
     pastas = ['CALCULOS', 'TAXAS', 'PUBLICO']
-    
-    # Define a gravação do log diretamente dentro de dados_tratados
-    arquivo_saida = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "dados_tratados", "relatorio_colunas.txt"))
     
     with open(arquivo_saida, "w", encoding="utf-8") as f:
         f.write("============================================================\n")
@@ -81,8 +84,8 @@ def auditar_tudo():
         f.write("============================================================\n\n")
         
         for pasta in pastas:
-            path_pasta = os.path.join(caminho_base, pasta)
-            arquivos = sorted(glob.glob(os.path.join(path_pasta, "*.[cC][sS][vV]")))
+            path_pasta = caminho_base / pasta
+            arquivos = sorted(glob.glob(str(path_pasta / "*.[cC][sS][vV]")))
             
             f.write(f"📁 PASTA TEMÁTICA: {pasta}\n")
             f.write("=" * 60 + "\n")
@@ -94,21 +97,20 @@ def auditar_tudo():
                 continue
                 
             for arq in arquivos:
-                nome_arq = os.path.basename(arq)
+                nome_arq = Path(arq).name
                 ano_arq = extrair_ano(nome_arq)
                 
                 f.write(f"📄 Arquivo: {nome_arq} [Safra: {ano_arq}]\n")
                 f.write("-" * 60 + "\n")
                 
                 try:
-                    # Detecção de Delimitador Dinâmico
+                    # Detecção dinâmica de delimitador
                     with open(arq, 'r', encoding='latin1') as f_check:
                         primeira_linha = f_check.readline()
-                        sep = ',' if ',' in primeira_linha else ';'
+                    sep = ',' if ',' in primeira_linha else ';'
                     
-                    # Leitura completa para análise volumétrica de nulos
                     df = pd.read_csv(arq, sep=sep, encoding='latin1', dtype=str)
-                    df.columns = df.columns.str.strip().str.lower() # Normalização de colunas
+                    df.columns = df.columns.str.strip().str.lower()
                     
                     total_linhas = len(df)
                     f.write(f" -> Volume Total de Linhas (Nacional): {total_linhas}\n")
@@ -118,15 +120,12 @@ def auditar_tudo():
                     f.write("-" * 115 + "\n")
                     
                     for col in df.columns:
-                        # Identificação de Tipo Amostral Simples
                         amostra = df[col].dropna()
-                        if idx_nulos := total_linhas - len(amostra):
-                            pct_nulos = (idx_nulos / total_linhas) * 100
-                            txt_nulos = f"{idx_nulos} ({pct_nulos:.1f}%)"
-                        else:
-                            txt_nulos = "0 (0.0%)"
-                            
-                        # Detecta o tipo predominante real dos caracteres preenchidos
+                        idx_nulos = total_linhas - len(amostra)
+                        pct_nulos = (idx_nulos / total_linhas) * 100 if total_linhas > 0 else 0
+                        txt_nulos = f"{idx_nulos} ({pct_nulos:.1f}%)" if idx_nulos > 0 else "0 (0.0%)"
+                        
+                        # Inferência de tipo predominante
                         tipo_detectado = "Object/Str"
                         if len(amostra) > 0:
                             exemplo = str(amostra.iloc[0]).replace(',', '.')
@@ -139,7 +138,6 @@ def auditar_tudo():
                                 except ValueError:
                                     pass
                         
-                        # Tratamento Semântico no Mapa
                         if col in MAPA_COLUNAS_ATUAL:
                             status = "✅ [MAP]"
                             traducao = MAPA_COLUNAS_ATUAL[col]
