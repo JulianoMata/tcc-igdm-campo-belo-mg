@@ -112,8 +112,8 @@ Antes do pipeline principal, uma esteira de scripts garante a conformidade e a d
 
 ### 3️⃣ Simulação Prescritiva e Modelagem de ROI (`notebooks/03_simulacao_cenarios_plano_acao.ipynb`)
 
-* **Mensuração da Perda Estrutural:** Quantificação exata do custo de oportunidade financeiro decorrente do *gap* de eficiência na nota do IGD-M, isolando distorções de repasses retroativos federais.
-* **Simulação de Sensibilidade:** Modelagem determinística de resgate de receita sob três cenários operacionais (Conservador, Moderado e Otimista).
+* **Mensuração do Montante Não Captado e Custo de Oportunidade:** Quantificação exata da frustração de receita orçamentária decorrente do *gap* de eficiência na nota do IGD-M, isolando distorções de repasses retroativos federais.
+* **Simulação de Sensibilidade:** Modelagem determinística de resgate de receita potencial sob três cenários operacionais (Conservador a 30%, Moderado a 60% e Otimista a 90%).
 * **Análise de Viabilidade Econômica (ROI):** Demonstração do retorno fiscal sobre o investimento marginal (horas extras e logística de busca ativa), validando a blindagem orçamentária do Fundo Municipal de Assistência Social em períodos de restrição fiscal.
 
 ---
@@ -132,9 +132,9 @@ A abordagem substitui o modelo reativo tradicional por uma estratégia de **inte
 ### 🔍 O Diagnóstico de Eficiência Atual
 
 > 📉 **Nota Média Recente (IGD-M):** **87%** ($0{,}87$) de eficiência operacional.  
-> 💸 **Custo de Oportunidade Anual:** **R$ 23.435,10** em repasses federais não captados por ineficiência cadastral.
+> 💸 **Custo de Oportunidade Anual:** **R\$ 23.435,10** em repasses federais não captados por defasagem nos índices operacionais.
 
-* **O Gargalo Estrutural ($r = +0{,}66$):** A análise estatística evidenciou que o volume de famílias no Cadastro Único expandiu-se com velocidade superior à capacidade de registro dos acompanhamentos, criando uma defasagem na cobertura das condicionalidades de Saúde.
+* **Efeito de Escala vs. Alavancas Operacionais ($r = +0{,}66$):** A análise estatística bivariada em nível capturou a expansão estrutural conjunta das séries impulsionada pelo ciclo nacional de ampliação do Cadastro Único (2022–2023). Contudo, o teste de robustez em **primeira diferença ($\Delta$ mensal)** dissipa a correlação no curto prazo ($r = 0{,}019; p = 0{,}86$), evidenciando que o volume de famílias define a cota máxima autorizada, enquanto as verdadeiras alavancas operacionais de liquidação mensal residem no cumprimento tempestivo das metas do Tripé da Qualidade (Saúde e Gestão).
 * **O Impacto da Latência de Dados:** Na rotina de atendimento, os registros de acompanhamento nutricional (pesagem) e vacinação ocorrem na atenção primária, mas enfrentam atrasos de digitação e sincronização nos sistemas de registro (**SISAB / e-SUS APS** e sistema de condicionalidades). O atraso na transmissão é computado pelo Governo Federal como descumprimento de meta, deflagrando glosas automáticas no valor liquidado mensalmente.
 
 ---
