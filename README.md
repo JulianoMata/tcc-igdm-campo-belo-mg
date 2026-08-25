@@ -143,24 +143,21 @@ A abordagem substitui o modelo reativo tradicional por uma estratégia de **inte
 
 Para captar a receita orçamentária represada e blindar o custeio do Fundo Municipal de Assistência Social, o modelo de simulação projetou o impacto financeiro do resgate de eficiência:
 
-| Cenário Analisado | Resgate do Montante Não Captado | Incremento Anual Estimado | Impacto Acumulado no Mandato (4 Anos) | Nível de Esforço |
+| Cenário Analisado | Resgate do Montante Não Captado | Incremento Anual Estimado | Impacto Acumulado no Mandato (4 Anos) | Nível de Esforço / Finalidade |
 | :--- | :---: | :---: | :---: | :--- |
 | **1. Conservador (Ajuste de Fluxo)** | **30%** do *gap* | **+ R\$ 7.030,53** | **+ R\$ 28.122,12** | Baixo (agilização de digitação e sincronização) |
 | **2. Moderado (Busca Ativa Focal)** | **60%** do *gap* | **+ R\$ 14.061,06** | **+ R\$ 56.244,24** | Médio (triagem de cadastros defasados e contato direto) |
 | **3. Otimista (Força-Tarefa Intersetorial)** | **90%** do *gap* | **+ R\$ 21.091,59** | **+ R\$ 84.366,36** | Alto (busca ativa direcionada e intersetorialidade) |
+| *🎯 Teto Teórico de Referência (Custo Total)* | *100% do gap* | *R\$ 23.435,10* | *R\$ 93.740,40* | *Baliza teórica máxima (não operacional)* |
 
-> 📌 **Relevância para a Gestão do SUAS:** Considerando o teto máximo de receita não captada de **R\$ 23.435,10/ano** (100% do gap), o custo de oportunidade acumulado em um mandato de 4 anos alcança **R\$ 93.740,40** — recurso financeiro que o município deixa de arrecadar e que poderia ser integralmente investido na modernização e capacitação da rede socioassistencial.
+> 📌 **Nota Explicativa sobre o Teto de 100%:**  
+> A linha correspondente a **100% do *gap*** não constitui um plano de ação executável, pois a perfeição matemática contínua (nota $1{,}00$ ininterrupta) é inviável na dinâmica socioassistencial real. Ela quantifica o **custo de oportunidade total** do município (R\$ 23.435,10/ano; R\$ 93.740,40 no quadriênio) e funciona como a régua máxima de referência para balizar o ganho proporcional dos três cenários operacionais viáveis (Cenários 1, 2 e 3).
 
 ---
 
-#### 🛡️ A Lógica da Eficiência Preventiva & Análise de ROI (Retorno sobre Investimento)
+#### 🛡️ A Lógica da Eficiência Preventiva & Análise de ROI
 
 O planejamento estratégico demonstra como a Ciência de Dados blinda o orçamento municipal ao reorganizar as rotinas da equipe existente, eliminando a necessidade de novos aportes financeiros, contratações adicionais ou gastos com horas extras:
-
-* **Métrica de Retorno Prescritivo (ROI):**
-  * 📉 **Cenário Conservador (30% de recuperação):** Resgate de **R\$ 7.030,53 / ano** (+R$ 28.122,12 no quadriênio) via alinhamento de fluxos internos e cruzamento de bases locais.
-  * ⚖️ **Cenário Moderado (60% de recuperação):** Resgate de **R\$ 14.061,06 / ano** (+R$ 56.244,24 no quadriênio) com triagem inteligente de cadastros críticos em fase de defasagem (24 meses).
-  * 🚀 **Cenário Teto Operacional (100% de recuperação):** Resgate pleno de **R\$ 23.435,10 / ano** (+R$ 93.740,40 no quadriênio), atingindo o teto potencial de repasse federal.
 
 * **Mitigação de Risco Fiscal & Blindagem:** Com **87% ($0{,}87$) de eficiência média recente**, Campo Belo/MG mantém estabilidade e situa-se a apenas 3 pontos percentuais da faixa de excelência ($90\%$). A governança de dados atua como um seguro fiscal, evitando quedas pontuais que gerem glosas financeiras.
 
